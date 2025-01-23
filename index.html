@@ -70,11 +70,13 @@ h2 {
 .date {
   font-weight: 500;
   font-size: 0.875rem;
+  color:#D9D9D9:
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   gap: 20px;
 }
 
@@ -87,13 +89,14 @@ h2 {
 }
 
 .responsive-image {
-  width: 100%;
-  height: auto;
-  max-width: 320px;
-  display: block;
+  max-width: 160px;
+  height: 160px;
   border-radius: 10px;
-  margin: 0 auto;
 }
+  .p1{
+    color:#D9D9D9:
+  }
+
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
@@ -124,25 +127,25 @@ h2 {
   <body>
     <div class="intro">
       <h1>We release interesting articles about <br> technology</h1>
-      <p>/////////////////////</p>
+      <p class="p1">/////////////////////</p>
     </div>
     <div class="body">
           <div class="row">
-            <img src="resources/photo_1.png" srcset="resources/photo_1.png 160w, resources/photo_1@2x.png 320w"  sizes="(max-width: 600px) 50vw, 20vw"  alt="photo 1" class="responsive-image">
+            <img src="resources/photo_1.png" srcset="resources/photo_1.png 160w"  sizes="(max-width: 160px) 50vw, 20vw"  alt="photo 1" class="responsive-image">
             <div class="col">
               <h2>Unlocking the Power of Cloud Computing:A Guide to Scalable Solutions</h2>
               <p class="date">November 12, 2024</p>
             </div>
           </div>
           <div class="row">
-            <img src="resources/photo_2.png" srcset="resources/photo_2.png 160w, resources/photo_2@2x.png 320w"  sizes="(max-width: 600px) 50vw, 20vw"  alt="photo 2" class="responsive-image">
+            <img src="resources/photo_2.png" srcset="resources/photo_2.png 160w"  sizes="(max-width: 160px) 50vw, 20vw"  alt="photo 2" class="responsive-image">
             <div class="col">
             <h2>The Future of AI:How Machine Learning is Revolutionizing Industries</h2>
             <p class="date">November 12, 2024</p>
             </div>
           </div>  
           <div class="row">
-            <img src="resources/photo_3.png" srcset="resources/photo_3.png 160w, resources/photo_3@2x.png 320w"  sizes="(max-width: 600px) 50vw, 20vw"  alt="photo 3" class="responsive-image">
+            <img src="resources/photo_3.png" srcset="resources/photo_3.png 160w"  sizes="(max-width: 160px) 50vw, 20vw"  alt="photo 3" class="responsive-image">
             <div class="col">
             <h2> The Impact of 5G on Business:How Faster Networks are Transforming the Way We Work</h2>
             <p class="date">November 12, 2024</p>
