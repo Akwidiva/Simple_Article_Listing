@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
+
+.intro {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.date {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .body {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 0.875rem;
+  }
+}
+
+    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="intro">
+      <h1>We release interesting articles about <br> technology</h1>
+      <p>/////////////////////</p>
+    </div>
+    <div class="body">
+          <div class="row">
+            <img src="resources/photo_1.png" srcset="resources/photo_1.png 160w, resources/photo_1@2x.png 320w"  sizes="(max-width: 600px) 50vw, 20vw"  alt="photo 1" class="responsive-image">
+            <div class="col">
+              <h2>Unlocking the Power of Cloud Computing:A Guide to Scalable Solutions</h2>
+              <p class="date">November 12, 2024</p>
+            </div>
+          </div>
+          <div class="row">
+            <img src="resources/photo_2.png" srcset="resources/photo_2.png 160w, resources/photo_2@2x.png 320w"  sizes="(max-width: 600px) 50vw, 20vw"  alt="photo 2" class="responsive-image">
+            <div class="col">
+            <h2>The Future of AI:How Machine Learning is Revolutionizing Industries</h2>
+            <p class="date">November 12, 2024</p>
+            </div>
+          </div>  
+          <div class="row">
+            <img src="resources/photo_3.png" srcset="resources/photo_3.png 160w, resources/photo_3@2x.png 320w"  sizes="(max-width: 600px) 50vw, 20vw"  alt="photo 3" class="responsive-image">
+            <div class="col">
+            <h2> The Impact of 5G on Business:How Faster Networks are Transforming the Way We Work</h2>
+            <p class="date">November 12, 2024</p>
+            </div>
+          </div>
+        </div>
+    <div class="author-info">
+      Coded by <a href="#">Fonguh Joy Akwi</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
